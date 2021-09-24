@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: echo labeled
-        run: echo ENV
+        run: echo $ENV
