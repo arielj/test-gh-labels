@@ -7,7 +7,7 @@ on:
 
 jobs:
   create-review-app:
-    if: ${{ github.event.label.name == "deploy-review-app" }}
+    if: ${{ github.event.label.name == 'deploy-review-app' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
         run: echo "Deployyyy"
 
   destroy-review-app:
-    if: ${{ github.event.label.name == "destroy-review-app" }}
+    if: ${{ github.event.label.name == 'destroy-review-app' }}
     runs-on: ubuntu-latest
 
     steps:
